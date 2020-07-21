@@ -1,5 +1,6 @@
 package demo;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ import static org.junit.Assume.assumeTrue;
 import static org.mockito.Mockito.*;
 
 public class ArrayListTest {
-    @Test //BDD
+    @Test @Ignore //BDD
     public void shouldSizeIncrementedAndElementContainedWhenElementAdded() {
         //region Fixture | Arrange | Given
         ArrayList sut = new ArrayList();
@@ -29,7 +30,7 @@ public class ArrayListTest {
         //endregion
     }
 
-    @Test
+    @Test @Ignore
     public void shouldUseElementsStringRepresentationWhenToString1() {
         final ArrayList<Object> sut = new ArrayList<>();
         Object elementStub = mock(Object.class);
@@ -42,7 +43,7 @@ public class ArrayListTest {
             .contains("test string 1");
     }
 
-    @Test
+    @Test @Ignore
     public void shouldUseElementsStringRepresentationWhenToString2() {
         final ArrayList sut = new ArrayList();
         Object elementMock = mock(Object.class);
